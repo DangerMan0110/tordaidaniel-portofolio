@@ -3,79 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tordai Dániel - Portfólió / CV</title>
+  <title data-i18n="pageTitle">Tordai Dániel - Portfólió / CV</title>
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Tordai Dániel portfóliója és CV-je.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <main id="app">
-
     <section class="profile-card">
-        <img class="avatar" src="profile.jpg" alt="Profilkép" />
-        <div class="meta">
-            <h1 class="name">Dániel Tordai</h1>
-            <p class="role">Student · Computer</p>
-            <div class="links">
-                <a href="mailto:danieltordai@yahoo.com">Email</a> ·
-                <a href="https://linkedin.com/in/dániel-tordai-157330357/" target="_blank" rel="noopener">LinkedIn</a> ·
-                <a href="https://github.com/DangerMan0110" target="_blank" rel="noopener">GitHub</a>
-            </div>
+      <img class="avatar" src="profile.jpg" alt="Profilkép" />
+      <div class="meta">
+        <h1 class="name" data-i18n="name">Dániel Tordai</h1>
+        <p class="role" data-i18n="role">Student · Computer</p>
+        <div class="links">
+          <a href="mailto:danieltordai@yahoo.com">Email</a> ·
+          <a href="https://linkedin.com/in/dániel-tordai-157330357/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/DangerMan0110" target="_blank" rel="noopener">GitHub</a>
         </div>
+      </div>
     </section>
 
     <section class="card">
-      <h2>Introduction</h2>
-      <p>
-        My name is Daniel Tordai, a passionate computer science student at UMFST.
-        This is my 3rd and final year of my Bachelor's degree, and the areas I am most interested in are mobile and game development;
-      </p>
+      <h2><i data-lucide="user"></i> <span data-i18n="introTitle">Introduction</span></h2>
+      <p data-i18n="introText">My name is Daniel Tordai, a passionate computer science student at UMFST. This is my 3rd and final year of my Bachelor's degree, and the areas I am most interested in are mobile and game development.</p>
     </section>
 
     <section class="card">
-      <h2>Experience</h2>
+      <h2><i data-lucide="briefcase"></i> <span data-i18n="expTitle">Experience</span></h2>
       <div class="job">
-        <h3>Junior app developer</h3>
-        <p class="job-date">2025 – present</p>
+        <h3 data-i18n="exp1Title">Junior app developer</h3>
+        <p class="job-date" data-i18n="exp1Date">2025 – present</p>
         <ul>
-          <li>Developing mobile applications in Flutter</li>
-          <li>Implementing database connections and API integrations</li>
+          <li data-i18n="exp1a">Developing mobile applications in Flutter</li>
+          <li data-i18n="exp1b">Implementing database connections and API integrations</li>
         </ul>
       </div>
-
       <div class="job">
-        <h3>Intern – Aprilred</h3>
-        <p class="job-date">2025 july - september</p>
+        <h3 data-i18n="exp2Title">Intern – Aprilred</h3>
+        <p class="job-date" data-i18n="exp2Date">2025 July - September</p>
         <ul>
-          <li>Mobile development in Flutter</li>
-          <li>Working as a team on complex projects</li>
+          <li data-i18n="exp2a">Mobile development in Flutter</li>
+          <li data-i18n="exp2b">Working as a team on complex projects</li>
         </ul>
       </div>
     </section>
 
     <section class="card">
-      <h2>Studies</h2>
-      <p><strong>UMFST "George Emil Palade" din Targu Mures</strong> – BSc in Computer Science (2022 – Present)</p>
-      <p>Key subjects: Programming, Databases, Software Technology, Artificial Intelligence</p>
+      <h2><i data-lucide="book-open"></i> <span data-i18n="studyTitle">Studies</span></h2>
+      <p data-i18n="study1"><strong>UMFST "George Emil Palade" din Targu Mures</strong> – BSc in Computer Science (2022 – Present)</p>
+      <p data-i18n="study2">Key subjects: Programming, Databases, Software Technology, Artificial Intelligence</p>
     </section>
 
     <section class="card">
-      <h2>Készségek</h2>
+      <h2><i data-lucide="cpu"></i> <span data-i18n="skillsTitle">Skills</span></h2>
       <div class="chips">
+        <span class="chip">C++</span>
+        <span class="chip">SQL</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Java</span>
         <span class="chip">Flutter</span>
         <span class="chip">Unity</span>
         <span class="chip">Python</span>
-        <span class="chip">SQL</span>
         <span class="chip">Git</span>
+        <span class="chip">.NET</span>
+        <span class="chip">Machine Learning</span>
       </div>
     </section>
 
     <section class="card">
-      <h2>Kapcsolat</h2>
-      <p>Email: <a href="mailto:danieltordai@yahoo.com">danieltordai@yahoo.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/dániel-tordai-157330357/" target="_blank" rel="noopener">Profil megtekintése</a></p>
-      <p>GitHub: <a href="https://github.com/DangerMan0110" target="_blank" rel="noopener">Profil megtekintése</a></p>
+      <h2><i data-lucide="mail"></i> <span data-i18n="contactTitle">Contact</span></h2>
+      <div class="contact-item">
+        <i data-lucide="mail"></i>
+        <span>Email:</span>
+        <a href="mailto:danieltordai@yahoo.com">danieltordai@yahoo.com</a>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="linkedin"></i>
+        <span>LinkedIn:</span>
+        <a href="https://linkedin.com/in/dániel-tordai-157330357/" target="_blank" rel="noopener" data-i18n="viewProfile">View profile</a>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="github"></i>
+        <span>GitHub:</span>
+        <a href="https://github.com/DangerMan0110" target="_blank" rel="noopener" data-i18n="viewProfile">View profile</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><i data-lucide="send"></i> <span data-i18n="formTitle">Get in touch</span></h2>
+      <form id="contactForm" action="#" method="post">
+        <label for="name" data-i18n="formName">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email" data-i18n="formEmail">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message" data-i18n="formMessage">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="captcha-container">
+          <div class="g-recaptcha" data-sitekey="6LeBdgksAAAAAMatW7lwYO9v2ChcJThhx-WFRb9V"></div>
+        </div>
+        <button type="submit" data-i18n="formSend">Send</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2><i data-lucide="heart"></i> <span data-i18n="hobbiesTitle">Hobbies</span></h2>
+      <div class="hobbies-container">
+        <div class="hobbies-marquee" id="hobbies"></div>
+      </div>
     </section>
   </main>
+  <footer id="translation-note"></footer>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
